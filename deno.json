@@ -1,0 +1,18 @@
+{
+  "name": "@ddd/dir",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./home-dir": "./home_dir.ts",
+    "./cache-dir": "./cache_dir.ts",
+    "./deno-dir": "./deno_dir.ts"
+  },
+  "description": "Utilities related to operating system default directory",
+  "tasks": {
+    "dev": "deno test --watch"
+  },
+  "license": "MIT",
+  "imports": {
+    "@std/path": "jsr:@std/path@^1.1.3"
+  }
+}
