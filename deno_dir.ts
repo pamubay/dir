@@ -1,8 +1,11 @@
 import { join, resolve } from "@std/path";
 import { cacheDir, homeDir } from "./mod.ts";
 
-// Decides Deno cache directory from environment
-// original implementation: https://github.com/denoland/deno_cache_dir/blob/696ff4fe13bed17e881d52e222dbbafec7e531ec/rs_lib/src/deno_dir.rs#L32
+// Port: https://github.com/denoland/deno_cache_dir/blob/696ff4fe13bed17e881d52e222dbbafec7e531ec/rs_lib/src/deno_dir.rs#L32
+
+/**
+ * Set Deno cache directory from environment or custom path
+ */
 export function denoDir(path?: URL | string): string {
   const root_custom = path &&
     (path instanceof URL ? resolve(path.toString()) : resolve(path));
