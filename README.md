@@ -24,6 +24,21 @@ Utilities related to operating system default directory.
 
 - Set Deno cache directory
 
+### Examples
+
+```js
+import { homeDir, cacheDir, denoDir } from "jsr:@ddd/dir";
+
+const user_home_dir = homeDir()
+
+const user_cache_dir = cacheDir()
+
+const deno_cache_dir = denoDir() // From environment variables
+
+const deno_custom_cache_dir = denoDir("./my_deno_cache")
+
+```
+
 ### NOTES
 
 - Currently has no test
