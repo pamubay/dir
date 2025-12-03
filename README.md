@@ -1,5 +1,7 @@
 # dir
 
+[![JSR @ddd/dir](https://jsr.io/badges/@ddd/dir)](https://jsr.io/@ddd/dir)
+
 Utilities related to operating system default directory.
 
 ### Utilities
